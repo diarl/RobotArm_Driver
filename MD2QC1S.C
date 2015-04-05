@@ -6,7 +6,7 @@
 #include <math.h>               /*  For labs function  */
 
 /*  Function prototypes needed by programmer  */
-void    main1(void);             /*  Example program main  */
+void    main(void);             /*  Example program main  */
 void    md2setup(void);         /*  Initialize variables  */
 void    md2on(void);            /*  Turn MD-2 on  */
 void    md2off(void);           /*  Turn MD-2 off  */
@@ -19,7 +19,7 @@ int         md2hold;            /*  Hold motor when done  */
 long        md2position[7];     /*  Current motor positions  */
 int         md2motor;           /*  Selected motor  */
 int         md2speed[7];        /*  Motor speeds  */
-long        md2target[7];       /*  Target distance and direction  */
+long        md2target[7];       /*  Target distance and direction. POSSITIVE OR NEGATIVE  */
 
 /*  Global motor parameters NOT needed by programmer */
 unsigned    md2mtradr12;        /*  Port for motors 1 & 2  */
@@ -31,7 +31,7 @@ int         md2patptr[7];       /*  Step pattern pointers  */
 
 /*  main is just an example  */
 
-void main1(void)
+void example(void)
 {
 	printf("\n\n\nmoving\n");
 
