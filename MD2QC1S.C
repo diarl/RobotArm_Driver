@@ -6,7 +6,7 @@
 #include <math.h>               /*  For labs function  */
 
 /*  Function prototypes needed by programmer  */
-void    main(void);             /*  Example program main  */
+void    main1(void);             /*  Example program main  */
 void    md2setup(void);         /*  Initialize variables  */
 void    md2on(void);            /*  Turn MD-2 on  */
 void    md2off(void);           /*  Turn MD-2 off  */
@@ -31,7 +31,7 @@ int         md2patptr[7];       /*  Step pattern pointers  */
 
 /*  main is just an example  */
 
-void main(void)
+void main1(void)
 {
 	printf("\n\n\nmoving\n");
 
